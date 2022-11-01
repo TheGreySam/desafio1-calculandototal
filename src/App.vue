@@ -2,11 +2,13 @@
   <div id="app">
     
     <CalculatorView/>
+
   </div>
 </template>
 
 <script>
 import CalculatorView from './components/Calculator.vue'
+
 
 export default {
   name: 'App',
