@@ -15,7 +15,7 @@
                 <button class="btn btn-calcular text-light" @click="Calcular">Calcular Total</button>
             </div>
         </div>
-        <div class="card col-sm" id="totaltotal" style="width: 22rem">
+        <div class="col-sm " id="totaltotal" style="width: 22rem">
             
         </div>
        </div>
@@ -37,13 +37,17 @@
         let cantidad = document.querySelector("#cantidad").value;
         let color = document.querySelector("#color").value;
         document.querySelector("#totaltotal").innerHTML = 
-        `<div class="card-body ">
-            <h5>Total= $${cantidad * 40000}</h5>
-            <h5>Cantidad= ${cantidad}</h5>
-            <h5>Color= 
-                <span style="height: 25px; width: 25px; border-radius: 50%; background-color: ${color}; display: inline-block">  
-                    <span/>
-        </h5>
+            `<div class="card ">
+                
+                 <ul class="list-group list-group-flush >
+                    <li class="list-group-item">Total= $${cantidad * 40000}</li>
+                    <li class="list-group-item">Cantidad= ${cantidad}</li>
+                    <li class="list-group-item">Color= <span 
+                        style="height: 25px; width: 25px; border-radius: 50%; background-color: ${color}; display: inline-block">  
+                    <span/></li>
+                </ul>
+       
+        
         </div>`;
       }
     }
